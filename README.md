@@ -56,12 +56,12 @@ commercial, depending on their features. But, the functions of all these
 pumps remain the same -- they all transport water and other liquids from
 one place to another.
 
-![image.png](.\images\/media/image10.jpg){}
+![image.png](.\images\/media/image10.jpg)
 
 In this project, I used **RSL10, the industry's lowest power Bluetooth®
 5 SoC, and several sensors from ON Semiconductor and Bosch**.
 
-![image.png](.\images\/media/image8.png){}
+![image.png](.\images\/media/image8.png)
 
 **Key Features**
 
@@ -121,7 +121,7 @@ while. Context-aware apps examine who, where, when, and what. The
 software designer uses this contextual information to determine why a
 situation is happening and then encodes some action in the application.
 
-![image.png](.\images\/media/image7.jpg){}
+![image.png](.\images\/media/image7.jpg)
 
 Based on this definition, the four most important categories of
 information to formulate a context-aware action are:
@@ -140,7 +140,7 @@ information to formulate a context-aware action are:
 
 ### **Step 1: Data Collection**
 
-![image.png](.\images\/media/image6.jpg){}
+![image.png](.\images\/media/image6.jpg)
 
 As shown above, we are going to set up our data collection stage for our
 compressor water pump with RSL10 device sensors. To do so, we need to
@@ -150,22 +150,22 @@ configure our IDE for programming first.
 <https://www.onsemi.com/products/wireless-connectivity/wireless-rf-transceivers/rsl10-sip>
 and download the required IDE and SDK packages.
 
-![tempsnip.png](.\images\/media/image21.jpg){}
+![tempsnip.png](.\images\/media/image21.jpg)
 
 2\. Follow this official manual for importing the CMSIS pack in the
 OnSemi IDE. <https://www.onsemi.com/pub/collateral/evbum2614-d.pdf>
 
 3\. Copy the BH160 Sensor Hub example in your workspace.
 
-![image.png](.\images\/media/image9.jpg){}
+![image.png](.\images\/media/image9.jpg)
 
 4\. We can modify the example code to build a dataset for our project.
 
-![image.png](.\images\/media/image20.jpg){}
+![image.png](.\images\/media/image20.jpg)
 
 **Hardware Setup**
 
-![image.png](.\images\/media/image2.jpg){}
+![image.png](.\images\/media/image2.jpg)
 
 **Add an image**
 
@@ -184,18 +184,18 @@ to print all the sensor values and prepare our dataset.
 > sensorFusion.humidity);
 ```
 
-![Coin cell.gif](.\images\/media/image26.gif){}
+![Coin cell.gif](.\images\/media/image26.gif)
 
 The sensor values would be printed on the J-Link RTT Viewer.
 
 Once we are ready with the data collection part, we will proceed to
 training a Neuton model and running inference.
 
-![Screenshot (2).png](.\images\/media/image5.jpg){}
+![Screenshot (2).png](.\images\/media/image5.jpg)
 
 Check our dataset summary:
 
-![dataColelction.gif](.\images\/media/image25.gif){}
+![dataColelction.gif](.\images\/media/image25.gif)
 
 **Add an image**
 
@@ -206,7 +206,7 @@ Check our dataset summary:
 On the Neuton platform, upload your dataset and select \'output\' as the
 target variable.
 
-![image.png](.\images\/media/image15.jpg){}
+![image.png](.\images\/media/image15.jpg)
 
 We can select training types: classification or regression. For
 predictive maintenance, a regression model can help to predict future
@@ -218,22 +218,22 @@ for this project, I chose the classification type of task.
 Toggle the DSP option and select Windows size auto selection and start
 training.
 
-![image.png](.\images\/media/image22.jpg){}
+![image.png](.\images\/media/image22.jpg)
 
 Once the training is complete, we can explore variable-to-target
 relation features and data analysis charts.
 
-![overview.PNG](.\images\/media/image3.jpg){}
+![overview.PNG](.\images\/media/image3.jpg)
 
 The training looks good and we will download the generated TinyML model
 C library to use on our RSL10 board IDE. Our model has ***100% accuracy,
 only 39 Coefficients, and a 0.17 Kb Model Size***.
 
-![image.png](.\images\/media/image17.jpg){}
+![image.png](.\images\/media/image17.jpg)
 
 Click on the "Download" button.
 
-![image.png](.\images\/media/image11.jpg){}
+![image.png](.\images\/media/image11.jpg)
 
 ### **Step 3: Model deployment and Inference**
 
