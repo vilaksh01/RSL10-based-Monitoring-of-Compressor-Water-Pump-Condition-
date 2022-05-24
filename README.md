@@ -34,8 +34,6 @@ pumps requires lubricating, cleaning, changing air filters, and
 inspecting the machine for potential problems, so it's important to
 address any potential concerns before they cause serious issues.
 
-![image.png](./images/media/image1.jpg){}
-
 ### **Predictive Maintenance VS Reactive Maintenance?**
 
 Predictive maintenance is a type of **troubleshooting** that addresses
