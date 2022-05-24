@@ -388,10 +388,6 @@ We can see the inference output on the terminal:
 
 ![image.png](./images/media/image19.jpg)
 
-Have a look at the model footprint on the device.
-
-![modelInferencePump.gif](./images/media/image24.gif)
-
 *The Neuton TinyML model and RSL10 device have proved to be a working
 mission-critical solution for the compressor pumps industry. With such
 accurate and reliable* *tinyML models, there is still ample space left
