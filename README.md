@@ -239,10 +239,6 @@ height="3.4305555555555554in"}
 ![image.png](./images/media/image10.jpg){width="5.328125546806649in"
 height="4.431564960629921in"}
 
-**Add an image**
-
-**Delete this image**
-
 The pump heats so I tried to use a rough enclosure to protect the RSL10
 sensor board from any damage. Once the setup is complete, we are ready
 to print all the sensor values and prepare our dataset.
@@ -271,10 +267,6 @@ Check out the dataset summary:
 
 ![](./images/media/image25.png){width="6.5in"
 height="3.5972222222222223in"}
-
-**Add an image**
-
-**Delete this image**
 
 ### **Step 2: Model Training**
 
@@ -572,10 +564,6 @@ To see the output, we can either use the J-Link RTT Viewer or Eclipse
 IDE terminal viewer. Let\'s use Terminal in Eclipse OnSemi IDE.
 
 ![image.png](./images/media/image14.jpg){width="6.5in" height="3.5in"}
-
-**Add an image**
-
-**Delete this image**
 
 We can see the inference output on the terminal:
 
