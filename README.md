@@ -155,62 +155,6 @@ information to formulate a context-aware action are:
 ![image.png](./images/media/image3.jpg){width="5.432292213473316in"
 height="2.6162871828521435in"}
 
-  ----------------------------------------------------------------------------
-  **Feature**   **Unit**     **Description**              **Role in project**
-  ------------- ------------ ---------------------------- --------------------
-  head          degree       Euler angles express         to understand tilt,
-                             rotation of the object as a  placement and
-                             sequence of three rotations  position of the pump
-                             around objects' local        
-                             coordinate axes              
-
-  pitch         degree                                    
-
-  bank          degree                                    
-
-                                                          
-
-  xLinear       g            Acceleration means the       to understand the
-                             changing rate of velocity(V) rate of change of
-                             to time                      velocity for the
-                                                          pump
-
-  yLinear       g                                         
-
-  zLinear       g                                         
-
-                                                          
-
-  xRotate       degree/s     Representation of how fast   to understand the
-                             the angular position or      rate of shaky
-                             orientation of an object     motion, vibrations
-                             changes in time              
-
-  yRotate       degree/s                                  
-
-  zRotate       degree/s                                  
-
-                                                          
-
-  temperature   C            Pump breakdowns often result Machine surface
-                             from abnormal vibrations     temperature
-                             with an unusual rise in      
-                             temperature                  
-
-  humidity      \%           Higher humidity reduces the  Surrounding humidity
-                             efficiency of water          
-                             compressor pumps             
-
-  pressure      hPa          A decrease in inlet pressure Air pressure near
-                             will reduce the density of   the machine
-                             the air at the compressor    
-                             intake                       
-  ----------------------------------------------------------------------------
-
-*Note: Vibration means the state of an object moving repetitively
-back/forward, right/ left or up/down and is generally expressed by
-Frequency, Displacement, Velocity, and Acceleration.*
-
 As shown above, we will set up our data collection stage for our
 compressor water pump with RSL10 device sensors. To do so, we need to
 configure our IDE for programming first.
@@ -340,6 +284,7 @@ height="3.4722222222222223in"}
 
 The console should log the following output:
 
+```
 SEGGER J-Link GDB Server V7.58b Command Line Version
 
 JLinkARM.dll V7.58b (DLL compiled Nov 16 2021 15:00:10)
@@ -559,6 +504,7 @@ CONTROL_NS 00, FAULTMASK_NS 00, BASEPRI_NS 00, PRIMASK_NS 01
 Reading all registers
 
 > Starting target CPU\...
+```
 
 To see the output, we can either use the J-Link RTT Viewer or Eclipse
 IDE terminal viewer. Let\'s use Terminal in Eclipse OnSemi IDE.
