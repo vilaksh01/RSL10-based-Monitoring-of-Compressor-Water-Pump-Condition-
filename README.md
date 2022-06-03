@@ -286,223 +286,114 @@ The console should log the following output:
 
 ```
 SEGGER J-Link GDB Server V7.58b Command Line Version
-
 JLinkARM.dll V7.58b (DLL compiled Nov 16 2021 15:00:10)
-
 Command line: -if swd -device RSL10 -endian little -speed 1000 -port
-2331 -swoport 2332 -telnetport 2333 -vd -ir -localhostonly 1 -singlerun
--strict -timeout 0 -nogui
-
+2331 -swoport 2332 -telnetport 2333 -vd -ir -localhostonly 1 -singlerun -strict -timeout 0 -nogui
 \-\-\-\--GDB Server start settings\-\-\-\--
-
 GDBInit file: none
-
 GDB Server Listening port: 2331
-
 SWO raw output listening port: 2332
-
 Terminal I/O port: 2333
-
 Accept remote connection: localhost only
-
 Generate logfile: off
-
 Verify download: on
-
 Init regs on start: on
-
 Silent mode: off
-
 Single run mode: on
-
 Target connection timeout: 0 ms
-
 \-\-\-\-\--J-Link related settings\-\-\-\-\--
-
 J-Link Host interface: USB
-
 J-Link script: none
-
 J-Link settings file: none
-
 \-\-\-\-\--Target related settings\-\-\-\-\--
-
 Target device: RSL10
-
 Target interface: SWD
-
 Target interface speed: 1000kHz
-
 Target endian: little
-
 Connecting to J-Link\...
-
 J-Link is connected.
-
 Firmware: J-Link Lite-Cortex-M V9 compiled Feb 2 2021 16:33:27
-
 Hardware: V9.00
-
 S/N: 519003973
-
 Feature(s): GDB
-
 Checking target voltage\...
-
 Target voltage: 2.58 V
-
 Listening on TCP/IP port 2331
-
 Connecting to target\...
-
 Connected to target
-
 Waiting for GDB connection\...Connected to 127.0.0.1
-
 Reading all registers
-
 Read 4 bytes @ address 0x00000000 (Data = 0x20002000)
-
 Read 2 bytes @ address 0x00000000 (Data = 0x2000)
-
 Received monitor command: speed 1000
-
 Target interface speed set to 1000 kHz
-
 Received monitor command: clrbp
-
 Received monitor command: reset
-
 Resetting target
-
 Received monitor command: halt
-
 Halting target CPU\...
-
 \...Target halted (PC = 0x00100158)
-
 Received monitor command: regs
-
 R0 = 00100159, R1 = 00000007, R2 = 20008000, R3 = E000ED00
-
 R4 = 00100000, R5 = 00000007, R6 = FFFFFFFF, R7 = 40000E2C
-
 R8 = 4200A700, R9 = 00081A00, R10= BD648BE7, R11= 99F19BFF
-
 R12= 00000001, R13= 20007FFC, MSP= 20007FFC, PSP= 37EBBDB8
-
 R14(LR) = 000002E5, R15(PC) = 00100158
-
 XPSR 61000000, APSR 60000000, EPSR 01000000, IPSR 00000000
-
 CFBP 00000001, CONTROL 00, FAULTMASK 00, BASEPRI 00, PRIMASK 01
-
 Security extension regs:
-
 MSP_S = 00000000, MSPLIM_S = 00000000
-
 PSP_S = 00000000, PSPLIM_S = 00000000
-
 MSP_NS = 20007FFC, MSPLIM_NS = 00000000
-
 PSP_NS = 37EBBDB8, PSPLIM_NS = 00000000
-
 CONTROL_S 00, FAULTMASK_S 00, BASEPRI_S 00, PRIMASK_S 00
-
 CONTROL_NS 00, FAULTMASK_NS 00, BASEPRI_NS 00, PRIMASK_NS 01
-
 Reading all registers
-
 Received monitor command: speed auto
-
 Select auto target interface speed (2000 kHz)
-
 Received monitor command: flash breakpoints 1
-
 Flash breakpoints enabled
-
 Received monitor command: semihosting enable
-
 Semi-hosting enabled (Handle on BKPT)
-
 Received monitor command: semihosting IOClient 1
-
 Semihosting I/O set to TELNET Client
-
 Received monitor command: SWO DisableTarget 0xFFFFFFFF
-
 SWO disabled successfully.
-
 Received monitor command: SWO EnableTarget 0 0 0x1 0
-
 SWO enabled successfully.
-
 Downloading 16112 bytes @ address 0x00100000 - Verified OK
-
 Downloading 16048 bytes @ address 0x00103EF0 - Verified OK
-
 Downloading 16032 bytes @ address 0x00107DA0 - Verified OK
-
 Downloading 16016 bytes @ address 0x0010BC40 - Verified OK
-
 Downloading 16016 bytes @ address 0x0010FAD0 - Verified OK
-
 Downloading 14888 bytes @ address 0x00113960 - Verified OK
-
 Downloading 8 bytes @ address 0x00117388 - Verified OK
-
 Downloading 548 bytes @ address 0x00117390 - Verified OK
-
 Received monitor command: clrbp
-
 Received monitor command: reset
-
 Comparing flash \[\...\...\...\...\...\.....\] Done.
-
 Erasing flash \[\...\...\...\...\...\.....\] Done.
-
 Programming flash \[\...\...\...\...\...\.....\] Done.
-
 Resetting target
-
 Received monitor command: halt
-
 Halting target CPU\...
-
 \...Target halted (PC = 0x00100158)
-
 Received monitor command: regs
-
 R0 = 00100159, R1 = 00000007, R2 = 20008000, R3 = E000ED00
-
 R4 = 00100000, R5 = 00000007, R6 = FFFFFFFF, R7 = 40000E2C
-
 R8 = 4200A700, R9 = 00081A00, R10= BD648BE7, R11= 99F19BFF
-
 R12= 00000001, R13= 20007FFC, MSP= 20007FFC, PSP= 37EBBDB8
-
 R14(LR) = 000002E5, R15(PC) = 00100158
-
 XPSR 61000000, APSR 60000000, EPSR 01000000, IPSR 00000000
-
 CFBP 00000001, CONTROL 00, FAULTMASK 00, BASEPRI 00, PRIMASK 01
-
 Security extension regs:
-
 MSP_S = 00000000, MSPLIM_S = 00000000
-
 PSP_S = 00000000, PSPLIM_S = 00000000
-
 MSP_NS = 20007FFC, MSPLIM_NS = 00000000
-
 PSP_NS = 37EBBDB8, PSPLIM_NS = 00000000
-
 CONTROL_S 00, FAULTMASK_S 00, BASEPRI_S 00, PRIMASK_S 00
-
 CONTROL_NS 00, FAULTMASK_NS 00, BASEPRI_NS 00, PRIMASK_NS 01
-
 Reading all registers
-
 > Starting target CPU\...
 ```
 
